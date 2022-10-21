@@ -653,6 +653,36 @@ label start:
 
     #////////////////////////////////////////////////////////////////////////
     #SEAN
+    jump option1
+    label option1:
+        scene bg hallway
+        show hajime annoyed
+        h "I'm not sure where to go, which way do I go?"
+        menu:
+            "Go Left":
+                jump after_left
+            "Go Right":
+                jump after_right
+
+    label after_left:
+        scene bg generic room 1
+        show hajime what
+        h "I don't see anywhere to go"
+        menu:
+            "Stay here":
+                jump after_left
+            "Go back":
+                jump option1
+    image hajimestandidea:
+        "hajime standidea.webp"
+        zoom 0.5
+
+    label after_right:
+        scene bg corridor stairs
+        show hajimestandidea
+
+        h "This seems to be the right direction..."
+
     #Call scene
     #call character
     #Dialogue
