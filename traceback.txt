@@ -1,22 +1,47 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 31, in script
-    p "Welcome to my little game"
-Exception: Sayer 'p' is not defined.
+  File "game/script.rpy", line 163, in script
+    
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Hello Kitty\\AppData\\Roaming/RenPy/TwoTruthsAndALie-1664197078\\persistent'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 31, in script
-    p "Welcome to my little game"
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'p' is not defined.
+  File "game/script.rpy", line 163, in script
+    
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
+    display_say(who,
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 4040, in interact_core
+    self.idle_frame(can_block, expensive)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3514, in idle_frame
+    renpy.persistent.check_update()
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\persistent.py", line 360, in check_update
+    update()
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\persistent.py", line 397, in update
+    save()
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\persistent.py", line 413, in save
+    renpy.loadsave.location.save_persistent(data)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\savelocation.py", line 494, in save_persistent
+    l.save_persistent(data)
+  File "C:\Users\Hello Kitty\OneDrive\Desktop\Building IT Systems\Renpy\renpy-8.0.3-sdk\renpy\savelocation.py", line 352, in save_persistent
+    self.persistent_mtime = os.path.getmtime(fn)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/genericpath.py", line 55, in getmtime
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Hello Kitty\\AppData\\Roaming/RenPy/TwoTruthsAndALie-1664197078\\persistent'
 
-Windows-10-10.0.19043 AMD64
+Windows-10-10.0.22000 AMD64
 Ren'Py 8.0.3.22090809
 Two Truths And A Lie 1.0
-Sun Oct 16 23:29:26 2022
+Fri Oct 21 21:42:01 2022
