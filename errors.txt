@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 558: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    scene black
-    ^
+File "game/script.rpy", line 657: choice menuitem expects a non-empty block.
+    "Left":
+           ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Oct 21 22:27:23 2022
+Sat Oct 22 16:16:03 2022

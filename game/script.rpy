@@ -6,12 +6,13 @@ define h = Character('Harry', color = "#008080")
 define s = Character('Sofia', color = "#c8ffc8")
 define c = Character('Chloe', color = "#c8c8ff")
 define m = Character('Max', color = "#800080")
+define a = Character('All', color = "#FF0000")
 
 
 # The game starts here.
 
 label start:
-
+    
     scene bg car
 
     # Show a background. This uses a placeholder by default, but you can
@@ -646,6 +647,49 @@ label start:
 
     #////////////////////////////////////////////////////////////////////////
     #SHELLY
+
+    # 3 ways to go choose middle, left, right
+    #if left, call
+    m "Which way should we go"
+
+    label foyerchoice:
+        scene bg foyer
+
+        menu:
+            "Left":
+                jump choiceisleft
+            "Middle":
+                jump choiceismiddle
+
+    label choiceisleft:
+        scene bg generic room 1
+        show makoto think:
+            xalign 1.0
+            yalign 1.0
+        m "This seems right"
+    label choiceismiddle:
+        scene bg bathroom
+        show makoto shocked at left:
+            zoom 1.5
+        show chiaki clutch at center
+        show hajime gasp at right:
+            zoom 1
+        a "AAAHHHHHH"
+        scene bg bathroom
+        show chiaki sick at right:
+            zoom 1
+        c "This place is freaky. I don't want to go through here!"
+        hide chiaki
+        show hajime ponder at right:
+            zoom 1
+        h "Neither do I"
+        show hajime point
+        h "{b}Look over there!{b}, it's a door, I bet that leads to the way out!"
+        hide hajime
+        show makoto solve at right:
+            zoom 1
+        m "Good spotting, let's get out of here!"
+
     #Call scene
     #call character
     #Dialogue
