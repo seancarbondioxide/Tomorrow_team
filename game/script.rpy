@@ -22,7 +22,7 @@ label start:
         xalign 1.0
         yalign 1.0
 
-
+    
     h "What a great way to start our holiday!"
 
     hide hajime smile

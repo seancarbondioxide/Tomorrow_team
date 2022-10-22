@@ -2,6 +2,7 @@
 errors listed below, and try again.
 
 
+<<<<<<< Updated upstream
 File "game/script.rpy", line 671: end of line expected.
     jump option 1
                 ^
@@ -12,3 +13,11 @@ File "game/script.rpy", line 694: end of line expected.
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
 Sat Oct 22 17:20:54 2022
+=======
+File "game/script.rpy", line 771: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    "so you can all see what a pig I am"
+    ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Sat Oct 22 17:44:42 2022
+>>>>>>> Stashed changes
