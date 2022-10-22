@@ -2,22 +2,17 @@
 errors listed below, and try again.
 
 
-<<<<<<< Updated upstream
-File "game/script.rpy", line 671: end of line expected.
-    jump option 1
-                ^
+The label after_left is defined twice, at File "game/script.rpy", line 667:
+    label after_left:
+and File "game/script.rpy", line 754:
+label after_left:
 
-File "game/script.rpy", line 694: end of line expected.
-    jump option 1
-                ^
 
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Oct 22 17:20:54 2022
-=======
-File "game/script.rpy", line 771: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    "so you can all see what a pig I am"
-    ^
+The label after_right is defined twice, at File "game/script.rpy", line 680:
+    label after_right:
+and File "game/script.rpy", line 783:
+label after_right:
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Oct 22 17:44:42 2022
->>>>>>> Stashed changes
+Sat Oct 22 20:39:23 2022
