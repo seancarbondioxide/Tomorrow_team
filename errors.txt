@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 663: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Right"
-           ^
+File "game/script.rpy", line 671: end of line expected.
+    jump option 1
+                ^
+
+File "game/script.rpy", line 694: end of line expected.
+    jump option 1
+                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Oct 22 17:01:12 2022
+Sat Oct 22 17:20:54 2022
