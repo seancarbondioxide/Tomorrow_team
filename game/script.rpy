@@ -747,11 +747,11 @@ label start:
         menu:
 
             "Go Left":
-                jump after_left
+                jump after_left_ben
             "Go Right":
-                jump after_right
+                jump after_right_ben
 
-label after_left:
+label after_left_ben:
     scene bg generic room 1
     show hajime what
     h "I don't see anywhere to go"
@@ -773,14 +773,14 @@ label after_left:
 
     menu:
         "Stay here":
-            jump after_left
+            jump after_left_ben
         "Go back":
             jump showmenu
 image hajimestandidea:
     "hajime standidea.webp"
     zoom 0.5
 
-label after_right:
+label after_right_ben:
     scene bg bathroom
     show hajimestandidea
     h "This seems to be the right direction..."
