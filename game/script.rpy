@@ -660,6 +660,8 @@ label start:
                 jump choiceisleft
             "Middle":
                 jump choiceismiddle
+            "Right":
+                jump choiceisright
 
     label choiceisleft:
         scene bg generic room 1
@@ -689,6 +691,13 @@ label start:
         show makoto solve at right:
             zoom 1
         m "Good spotting, let's get out of here!"
+    label choiceisright:
+        scene bg generic room 1
+        show hajime mad
+        h "It's a dead end, we'll have to turn around"
+        jump foyerchoice
+
+
 
     #Call scene
     #call character
