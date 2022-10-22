@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 663: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    a "AAAHHHHHH"
-                 ^
+The label foyerchoice is defined twice, at File "game/script.rpy", line 650:
+    label foyerchoice:
+and File "game/script.rpy", line 660:
+label foyerchoice:
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Oct 22 20:47:43 2022
+Sat Oct 22 20:56:46 2022
