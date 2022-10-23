@@ -7,6 +7,7 @@ define s = Character('Sofia', color = "#c8ffc8")
 define c = Character('Chloe', color = "#c8c8ff")
 define m = Character('Max', color = "#800080")
 define a = Character('All', color = "FF0000")
+define n = Character('Narrator',color = "FF0000")
 
 
 # The game starts here.
