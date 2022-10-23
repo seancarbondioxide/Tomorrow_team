@@ -848,13 +848,218 @@ label after_right_ben:
     c "calm down you have seen movies at least one of us will make it out alive"
 
 
+    
     #////////////////////////////////////////////////////////////////////////
     #NIKHIL
-    #Call scene
-    #call character
-    #Dialogue
+label nikhil:
+    scene bg generic room 1
+    show chiaki yawn
+    c "Wait, guys i think my lunch is the least of our problems. I think there is someting in the building with us"
+    hide hajimestandidea
+    show makoto frustrated:
+        xalign 1.0
+        yalign 1.0
+        zoom 1.4
+    m "UMMM WHAT CHLOE?"
+    hide makoto frustrated
+    show sayaka cry at left:
+        xalign 1.0
+        yalign 1.0
+        zoom 1.4
+    c "I've been hearing strange noises the whole time we were here, and ever since we go to this room they have kept getting louder!"
+    hide sayaka cry
+    show chiaki yawn  at right:
+        xalign 1.0
+        yalign 1.0
+        zoom 1.4
+    c "I see a door, let's just try and get out ASAP"
+
+    hide chiaki yawn
+    show hajime scared:
+        xalign 1.0
+        yalign 1.0
+
+    h "Sigh... Guess we don't have a choice."
+
+    scene black
+    with dissolve
+
+    show bg foyer
+    with fade
+
+    show makoto think:
+        xalign 1.0
+        yalign 1.0
+
+    m "GUYS I think the door lead us back to the same foyer, but it looks a bit different now"
+
+    hide makoto think
+    show sayaka cry:
+        xalign 1.0
+        yalign 1.0
+
+    s "Guys look there are more doors!"
+
+    hide sayaka cry
+    show hajime scared:
+        xalign 1.0
+        yalign 1.0
+
+    h "Sigh... there are 3 doors. Looks like we have another decision to make."
+
+    hide hajime scared
+    show makoto think:
+        xalign 1.0
+        yalign 1.0
+
+    m "I can't tell if my nose is playing tricks on me but I smell gasoline "
+
+    hide makato think
+    show hajime scared:
+        xalign 1.0
+        yalign 1.0
+
+    h "whoever is doing this to us wants us to make a rushed decision and get ourselves trapped so lets take our time and make a rational choice so we can get out of here."
+
+
+label foyerchoice2:
+    scene bg foyer
+    menu:
+        "Left":
+            jump choiceisleft2
+        "Middle":
+            jump choiceismiddle2
+        "Right":
+            jump choiceisright2
+
+label choiceisleft2:
+    scene bg generic room 1
+    show makoto think right:
+        zoom 1
+    m "guys this door lead us back into the woods. Lets go back."
+    show makoto shocked at left:
+        zoom 1
+    show chiaki clutch at center
+    show hajime gasp at right:
+        zoom 1
+    scene bg bathroom
+    show chiaki sick at right:
+    a "NOOOOOO THE DOOR SHUT. WE ARE STUCK NOW. ARRRRGGGGGHHHHHH"
+    a "ARRRRRRRGGGGGGGHHHHHH"
+
+    hide makoto think
+    hide makoto shocked
+    hide chiaki clutch
+    hide chiaki sick
+    show hajime gasp
+    h "SHHHHH, lets not panic I have my phone we can try find a signal and call for help."
+
+    show hajime gasp
+
+    h "Follow me and stay very close."
+    hide hajime gasp
+    show chiaki yawn
+    c "umm guys, does anyone feel very sleepy all of a sudden?"
+    a "yeah, I thought I was the only one"
+
+    show hajime gasp
+    hide chiaki yawn
+    h "guy's don't fall asleep we amost got a sig....."
+    a "snoring."
+
+    scene black
+    with dissolve
+
+    show bg foyer
+    with fade
+
+    show makoto think:
+        xalign 1.0
+        yalign 1.0
+
+    m "huh? wait are we back in the car?"
+
+    hide makato think
+    show hajime gasp:
+    h "WAIT was that a dream?"
+    h "But we were all in it and all of us remember it"
+    hide hajime gasp
+    show sayaka cry:
+        xalign 1.0
+        yalign 1.0
+
+    s "sigh'of relief' guys this place is too weird, we should call it in and go home"
+    a "YES"
+
+    hide sayaka cry
+    n "The End"
+    jump end
+
+
+
+
+
+
+
+label choiceismiddle2:
+    scene bg bathroom
+    show makoto shocked at left:
+        zoom 1.5
+    show chiaki clutch at center
+    show hajime gasp at right:
+        zoom 1
+    a "AAAHHHHHH"
+    scene bg bathroom
+    show chiaki sick at right:
+        zoom 1
+    c "The floor broke!"
+    hide chiaki
+    show hajime ponder at right:
+        zoom 1
+    h "WERE FALLINGGGGGGGGGGG! arghhhhhhhh!"
+    show sayaka cry
+    s "ARGHHHHHH!"
+    hide hajime
+
+    a "'SPLAT' 'BANG' 'bones crack' "
+    show hajime gasp:
+    h "'dying'Turns out no one is making it out Chloe "
+
+    hide hajimi gasp
+    n"The End"
+
+    jump end
+
+label choiceisright2:
+    scene bg generic room 1
+    show hajime mad
+    h "GUYS LOOK it's the car! "
+    a "RUNNNNN"
+    a"'car doors slam'"
+    c "Worst holiday ever!"
+    h "Phew, guys NO MORE ROAD TRIPS lets go home!"
+    a "YES"
+    c "Wait my lunch"
+    a"NO"
+
+    n "The End"
+
+
+
+    jump end
+
 
     #////////////////////////////////////////////////////////////////////////
+    #Nikhil
 
+label end:
 
-    # This ends the game.
+    scene black
+    with dissolve
+
+    show bg generic room 1
+    with fade
+
+    scene bg generic room 1
+    n "Credits: Zen, Ben, Shalimay, Sean, Nikhil, Connor "
+
