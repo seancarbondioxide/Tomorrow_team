@@ -675,7 +675,7 @@ label foyerchoice:
 
 label choiceisleft:
     scene bg generic room 1
-    show makoto think right:
+    show makoto think at right:
         zoom 1
     m "This seems like thr right way"
     jump option1

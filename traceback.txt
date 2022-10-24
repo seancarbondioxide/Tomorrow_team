@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 770, in script
-    jump choice2isright
-ScriptError: could not find label 'choice2isright'.
+  File "game/script.rpy", line 678, in script
+    show makoto think right:
+Exception: Image 'makoto think' does not accept attributes 'right'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 770, in script
-    jump choice2isright
-  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'choice2isright'.
+  File "game/script.rpy", line 678, in script
+    show makoto think right:
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\display\image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 397, in _duplicate
+    args.extraneous()
+  File "C:\Users\seanc\OneDrive\Documents\renpy-8.0.3-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'makoto think' does not accept attributes 'right'.
 
 Windows-10-10.0.22000 AMD64
 Ren'Py 8.0.3.22090809
 Two Truths And A Lie 1.0
-Mon Oct 24 18:24:27 2022
+Mon Oct 24 20:56:47 2022
