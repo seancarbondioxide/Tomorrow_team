@@ -9,6 +9,20 @@ define m = Character('Max', color = "#800080")
 define a = Character('All', color = "FF0000")
 define n = Character('Narrator',color = "FF0000")
 
+transform alpha_dissolve:
+    alpha 0.0
+    linear 0.5 alpha 1.0
+    on hide:
+        linear 0.5 alpha 0
+
+screen countdown:
+    timer 0.01 repeat True action If(time > 0, true=SetVariable('time', time - 0.01), false=[Hide('countdown'), Jump(timer_jump)])
+    bar value time range timer_range xalign 0.5 yalign 0.9 xmaximum 300 at alpha_dissolve
+
+init:
+    $ timer_range = 0
+    $ timer_jump = 0
+
 
 # The game starts here.
 
@@ -723,19 +737,39 @@ label choiceisright:
         zoom 0.5
 
     label after_right:
+        $ time = 5
+        $ timer_range = 5
+        $ timer_jump = "too_slow"
         scene bg corridor stairs
         show hajimestandidea
-
         h "This seems to be the right direction..."
+        h "Look for something to help me."
+        show screen countdown
+        call screen secret_key
 
 
 
+    screen secret_key():
+        imagebutton:
+            xanchor 0.5
+            yanchor 0.5
+            xpos 0.9
+            ypos 0.65
+            idle "keyblack.png"
+            hover "keywhite.png"
+            action Jump("keyfound")
 
-    #////////////////////////////////////////////////////////////////////////
-    #CONNOR
-    #Call scene
-    #call character
-    #Dialogue
+    label too_slow:
+        h "Oh well I thought I might find something."
+        jump ben
+
+    label keyfound:
+        hide screen countdown
+        scene bg generic room 1
+        h "I wonder if this key will help..."
+        jump choiceisright2
+
+
 
 
     #////////////////////////////////////////////////////////////////////////
@@ -849,7 +883,7 @@ label after_right_ben:
     c "calm down you have seen movies at least one of us will make it out alive"
 
 
-    
+
     #////////////////////////////////////////////////////////////////////////
     #NIKHIL
 label nikhil:
@@ -1063,4 +1097,3 @@ label end:
 
     scene bg generic room 1
     n "Credits: Zen, Ben, Shalimay, Sean, Nikhil, Connor "
-
