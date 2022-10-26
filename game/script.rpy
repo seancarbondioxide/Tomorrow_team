@@ -715,6 +715,15 @@ label choiceisright:
     jump option1
     label option1:
         scene bg hallway
+        show chiaki standwonder
+        c "There are so many rooms I'm scared."
+        hide chiaki standwonder
+        show makoto nervous
+        m "Yes, this is making me nervous."
+        hide makoto nervous
+        show sayaka unsure
+        s "I don't see any way out."
+        hide sayaka unsure
         show hajime annoyed
         h "I'm not sure where to go, which way do I go?"
         menu:
@@ -727,6 +736,15 @@ label choiceisright:
         scene bg generic room 1
         show hajime what
         h "I don't see anywhere to go"
+        hide hajime what
+        show chiaki search
+        c "Looks empty to me."
+        hide chiaki search
+        show makoto idea
+        m "I think we better go back."
+        hide makoto idea
+        show sayaka standcold
+        s "Yeah, we better go back, I'm getting cold."
         menu:
             "Stay here":
                 jump after_left
@@ -747,8 +765,6 @@ label choiceisright:
         show screen countdown
         call screen secret_key
 
-
-
     screen secret_key():
         imagebutton:
             xanchor 0.5
@@ -768,9 +784,6 @@ label choiceisright:
         scene bg generic room 1
         h "I wonder if this key will help..."
         jump choiceisright2
-
-
-
 
     #////////////////////////////////////////////////////////////////////////
     #BEN
@@ -1096,4 +1109,4 @@ label end:
     with fade
 
     scene bg generic room 1
-    n "Credits: Zen, Ben, Shalimay, Sean, Nikhil, Connor "
+    n "Credits: Zen, Ben, Shalimay, Sean, Nikhil"
