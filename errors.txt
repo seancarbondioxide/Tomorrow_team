@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label foyerchoice is defined twice, at File "game/script.rpy", line 650:
-    label foyerchoice:
-and File "game/script.rpy", line 660:
-label foyerchoice:
+The label start is defined twice, at File "game/script.rpy", line 113:
+label start:
+and File "game/script.rpy", line 147:
+label start:
 
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Oct 22 20:56:46 2022
+Tue Nov  1 00:15:00 2022
