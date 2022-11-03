@@ -1094,7 +1094,7 @@ label foyerchoice2:
 
 label choiceisleft2:
     scene bg generic room 1
-    show makoto think right:
+    show makoto think at right:
         zoom 1
     m "guys this door lead us back into the woods. Lets go back."
     show makoto shocked at left:
