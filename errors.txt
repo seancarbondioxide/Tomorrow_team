@@ -2,11 +2,29 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/script.rpy", line 113:
-label start:
-and File "game/script.rpy", line 147:
-label start:
+File "game/script.rpy", line 1170: end of line expected.
+    hide hajime gasp:
+                    ^
 
+File "game/script.rpy", line 1171: end of line expected.
+    hide sayaka cry:
+                   ^
+
+File "game/script.rpy", line 1172: end of line expected.
+    hide makoto think:
+                     ^
+
+File "game/script.rpy", line 1276: end of line expected.
+    hide hajime gasp:
+                    ^
+
+File "game/script.rpy", line 1277: end of line expected.
+    hide sayaka cry:
+                   ^
+
+File "game/script.rpy", line 1278: end of line expected.
+    hide makoto think:
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Nov  1 00:15:00 2022
+Wed Nov 16 16:56:41 2022

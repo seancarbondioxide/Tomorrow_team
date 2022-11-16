@@ -1167,9 +1167,9 @@ label choiceisleft2:
     c "you know guys, I'm really glad we are Doing this again!"
     m "yeah, We wouldve had a great roadtrip if it wasn't for our little incident 3 years ago. "
     h"Okay Max don't jinks us now"
-    hide hajime gasp:
-    hide sayaka cry:
-    hide makoto think:
+    hide hajime gasp
+    hide sayaka cry
+    hide makoto think
     hide chiaki yawn
     show bg generic room 1
     with fade
