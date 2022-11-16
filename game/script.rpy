@@ -1151,9 +1151,40 @@ label choiceisleft2:
     s "sigh'of relief' guys this place is too weird, we should call it in and go home"
     a "YES"
 
+    scene black
+    with dissolve
+
+    show bg generic room 1
+    with fade
+    show hajime gasp:
+    show sayaka cry:
+    show makoto think:
+    show chiaki yawn
+
+    n "3 Years Later"
+    show makoto think:
+    show chiaki yawn
+    c "you know guys, I'm really glad we are Doing this again!"
+    m "yeah, We wouldve had a great roadtrip if it wasn't for our little incident 3 years ago. "
+    h"Okay Max don't jinks us now"
+    hide hajime gasp:
+    hide sayaka cry:
+    hide makoto think:
+    hide chiaki yawn
+    show bg generic room 1
+    with fade
+    n "3 Hours of Driving later,"
+    show hajime gasp:
+    h"Guys, why is it suddenly foggy?"
+    h"OH NO"
+    c "Is that the?"
+    s "Yes, It's the same barn"
+    m "I think I spoke too soon"
+
     hide sayaka cry
     n "The End"
     jump end
+
 
 
 
@@ -1185,8 +1216,32 @@ label choiceismiddle2:
     show hajime gasp:
     h "'dying'Turns out no one is making it out Chloe "
 
-    hide hajimi gasp
-    n"The End"
+    scene black
+    with dissolve
+
+    show bg generic room 1
+    with fade
+    show hajime gasp:
+    show sayaka cry:
+    show makoto think:
+    show chiaki yawn
+
+    n "3 Years Later A new group of 4 friends decided to go on a road trip down the same route as Max,Chloe,Sofia and Harry"
+
+    scene bg bathroom
+    show chiaki sick at right:
+    n "They ended up with the same fate as our beloved friends fron the beginning"
+
+    n "Unlike Max,Chloe,Sofia and Harry, the new group had families "
+
+    n "After 3 weeks of being missing, their families filed a missing persons case"
+
+    n "To this day no one knows what happeded to all the people who went missing at that mysterious barn "
+
+    n "No one except us"
+
+
+    n "The End"
 
     jump end
 
@@ -1201,6 +1256,36 @@ label choiceisright2:
     a "YES"
     c "Wait my lunch"
     a"NO"
+
+    scene black
+    with dissolve
+
+    show bg generic room 1
+    with fade
+    show hajime gasp:
+    show sayaka cry:
+    show makoto think:
+    show chiaki yawn
+
+    n"3 Years Later"
+    show makoto think:
+    show chiaki yawn
+    c"you know guys, I'm really glad we are Doing this again!"
+    m"yeah, We wouldve had a great roadtrip if it wasn't for our little incident 3 years ago. "
+    h"Okay Max don't jinks us now"
+    hide hajime gasp:
+    hide sayaka cry:
+    hide makoto think:
+    hide chiaki yawn
+    show bg generic room 1
+    with fade
+    n"3 Hours of Driving later,"
+    show hajime gasp:
+    h"Guys, why is it suddenly foggy?"
+    h"OH NO"
+    c"Is that the?"
+    s"Yes, It's the same barn"
+    m"I think I spoke too soon"
 
     n "The End"
 
